@@ -1,0 +1,8 @@
+.indent {
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+body {
+    background-image: url(../image/fon1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}

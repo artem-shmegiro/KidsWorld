@@ -1,0 +1,129 @@
+.indent {
+    margin: 7px 7px 7px 0; /* Отступы вокруг картинки */
+}
+
+body {
+    background-image: url(../fon1.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.nav-color {
+    background-color: #e3f2fd;
+}
+
+.item-responsive {
+    position: relative; /* относительное позиционирование */
+}
+
+.item-responsive:before {
+    display: block; /* отображать элемент как блок */
+    content: ""; /* содержимое псевдоэлемента */
+    width: 100%; /* ширина элемента */
+}
+
+.item-16by9 {
+    padding-top: 56.25%; /* (9:16)*100% */
+}
+
+.item-responsive > .content {
+    position: absolute; /* абсолютное положение элемент */
+    /* положение элемента */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover !important;
+}
+
+H1 {
+    text-shadow: -1px -1px #FFF,
+    -2px -2px #FFF,
+    -1px 1px #FFF,
+    -2px 2px #FFF,
+    1px 1px #FFF,
+    2px 2px #FFF,
+    1px -1px #FFF,
+    2px -2px #FFF,
+    -3px -3px 2px #BBB,
+    -3px 3px 2px #BBB,
+    3px 3px 2px #BBB,
+    3px -3px 2px #BBB;
+    color: steelblue;
+    transition: all 1s;
+}
+
+H1:hover {
+    color: yellowgreen;
+}
+
+.fa-comment {
+    color: #1E90FF; /* Цвет иконки */
+    text-shadow: 0 0 6px #000; /* Размытая тень */
+}
+
+.md-avatar {
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+    height: 50px;
+}
+.md-avatar.size-1 {
+    width: 40px;
+    height: 40px;
+}
+.md-avatar.size-2 {
+    width: 70px;
+    height: 70px;
+}
+.md-avatar.size-3 {
+    width: 90px;
+    height: 90px;
+}
+.md-avatar.size-4 {
+    width: 110px;
+    height: 110px;
+}
+.md-avatar.size-5 {
+    width: 250px;
+    height: 250px;
+}
+
+.src-image {
+    display: none;
+}
+
+.card {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    text-align: center;
+    padding: 0;
+}
+
+.card .header-bg {
+    /* This stretches the canvas across the entire hero unit */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    border-bottom: 1px #FFF solid;
+    background: linear-gradient(to top left, #23074D, #CC5333);
+    /* This positions the canvas under the text */
+    z-index: 1;
+}
+.card .avatar {
+    position: relative;
+    margin-top: 50px;
+    z-index: 100;
+}
+
+.card .avatar img {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,1);
+}
